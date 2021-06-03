@@ -1,16 +1,25 @@
-*
-{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body
-{
+
+body {
     overflow: hidden;
     scroll-behavior: smooth;
 }
-header
-{
+
+section {
+    height: 100vh;
+}
+
+canvas {
+    position: fixed;
+}
+
+/* about-me */
+.about-me {
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -18,16 +27,10 @@ header
     justify-content: center;
     align-items: center;
     padding: 0px 20px;
-    background-color: #000;
-}
-section
-{
-    height: 100vh;
+    /* background-color: #000; */
 }
 
-/* HEADER */
-.my-name
-{
+.my-name {
     margin-bottom: 50px;
     font-size: 60px;
     font-family: 'Oxanium';
@@ -36,8 +39,8 @@ section
     color: #FFF;
     z-index: 999;
 }
-.social-links
-{
+
+.social-links {
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -45,36 +48,36 @@ section
     align-items: center;
     z-index: 999;
 }
-.social-links a
-{
+
+.social-links a {
     width: 60px;
     height: 60px;
     text-align: center;
 }
-.social-links img
-{
+
+.social-links img {
     width: 40px;
     height: 40px;
     transition: all 0.5s;
 }
-.social-links a:hover img
-{
+
+.social-links a:hover img {
     width: 50px;
     height: 50px;
 }
-.arrow-down
-{
+
+.arrow-down {
     position: absolute;
     padding: 10px;
     bottom: 10px;
 }
-.arrow-down img
-{
+
+.arrow-down img {
     width: 25px;
     height: 25px;
 }
-.circle
-{
+
+.circle {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -84,17 +87,14 @@ section
 
 
 /* MEDIA QUERY */
-@media (max-width: 726px) 
-{
-  .my-name 
-   {
+@media (max-width: 726px) {
+    .my-name {
         font-size: 40px;
-   }
+    }
 
-   .circle 
-    {
-         width: 30px;
-         height: 30px;
-         border-radius: 15px;
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
     }
 }
